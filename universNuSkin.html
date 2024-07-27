@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'univers Nu Skin</title>
+  <!-- Lien vers Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Lien vers votre fichier CSS personnalisé -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <!-- Barre de navigation Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Cbbh</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#complements">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#appareils">Appareils</a></li>
+        <li class="nav-item"><a class="nav-link" href="#beaute">Compléments alimentaires</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Produit">Produits de beauté</a></li>
+        <li class="nav-item"><a class="nav-link" href="#devenir">Devenir Conseiller/Conseillère</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Section Devenir Conseiller/Conseillère -->
+  <div id="devenir" class="mb-5">
+    <h1 class="text-center mb-4">L'univers Nu Skin</h1>
+    <p class="card-text"> </p>
+    <h1 class="text-center mb-4">Le programme d'abonnement ADR</h1>
+    <p class="card-text"> Le programme d’abonnement ADR (Automatic Delivery Rewards) de Nu Skin est un système qui vous
+      permet de recevoir vos produits préférés de manière régulière. Voici les principaux points à retenir :
+      Commande récurrente : L’ADR est une commande mensuelle ou bimestrielle que vous définissez à la date de votre
+      choix entre le 1er et le 25 du mois1. Cela vous permet de recevoir vos produits à temps, tout le temps2.
+      Grace à ce progamme vous bénéficié d'avantages en accumulant des points produits que vous pourrez échanger contre
+      des produits. Si vous avez des questions sur l’ADR, n’hésitez pas à me <a href="contact.html"> contacter par email
+      </a>! Ou bien directement sur ma page vinted <a href=""> <img width="80px" src="Vinted.png"></a>
+      </p>
+    <h1 class="text-center mb-4">Devenir Conseiller/Conseillère</h1>
+    <p>Rejoignez notre équipe chez Nu Skin et prenez votre destin en main ! En tant que conseiller, vous représenterez
+      une marque de renom dans le domaine des soins de la peau et du bien-être, bénéficiant d'une réputation mondiale
+      pour ses produits de qualité supérieure. Avec nous, vous vous lancez directement dans l'action, avec un
+      potentiel de revenus attrayants et des récompenses à la clé. Rejoignez-nous dès aujourd'hui et découvrez votre
+      potentiel.</p>
+    <div class="text-center">
+      <button id='modal' class="btn btn-primary"><img src="QR code mf.png" alt="QR code" class="img-fluid"></button>
+    </div>
+    <div class="text-center">
+      <button id="openModalBtn" class="btn btn-primary">Ouvrir la Fenêtre Modale</button>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Contenu de la fenêtre modale.</p>
+        <img src="QR code mf.png" alt="QR code" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Pied de page -->
+  <footer class="py-4 bg-light">
+    <div class="container">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Accueil</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Appareils</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Compléments alimentaires</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Produits de beauté</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Devenir conseiller/consseillère</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2024 Osmose, Inc</p>
+    </div>
+  </footer>
+
+  <!-- Scripts Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

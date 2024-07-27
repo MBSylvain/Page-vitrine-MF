@@ -1,0 +1,132 @@
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.appareil img {
+  text-align: center;
+
+}
+
+.appareil,
+container {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  justify-content: center;
+  padding: 20px
+}
+
+.imgTitre img {
+  width: 200px;
+  height: 200px;
+}
+
+.container {
+  justify-content: space-around;
+}
+
+/* Définition de l'animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    /* Opacité de départ à 0 */
+  }
+
+  to {
+    opacity: 1;
+    /* Opacité finale à 1 */
+  }
+}
+
+#complements,
+imgTitre {
+  animation: fadeIn 6s ease-in-out;
+}
+
+.parainage {
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (max-width:600px) {
+
+  .baniere {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+  }
+
+  .appareil {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .complement {
+    animation: fadein 3s;
+    width: 200px;
+    height: 200px;
+  }
+
+  .devenir {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* fenetre modal  
+/* Le style de la fenêtre modale (cachée par défaut) */
+.modal {
+  display: none;
+  /* Cachée par défaut */
+  position: fixed;
+  /* Rester en place */
+  z-index: 1;
+  /* Au-dessus des autres éléments */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Pleine largeur */
+  height: 100%;
+  /* Pleine hauteur */
+  overflow: auto;
+  /* Scroll si nécessaire */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Noir avec opacité */
+}
+
+/* Contenu de la fenêtre modale */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% du haut et centré */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Peut être ajusté */
+}
+
+/* Bouton de fermeture (croix) */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Vinted{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
