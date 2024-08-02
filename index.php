@@ -34,11 +34,23 @@
   <!-- Contenu de la page -->
   <div class="container mt-4">
 
-    <!-- Section Appareils -->
+    <!-- Section baniére-->
     <div id="appareils" class="mb-5">
       <img class="img-fluid" src="nu-skin-ageloc-best-selling-beauty-devices-banner.webp" alt="les appareils">
-      <h2 class="my-4 text-center">La marque n° 1 d’appareils de soins de beauté au monde pendant six années
-        consécutives !</h2>
+      <h2 class="titre my-4 text-center">La marque n° 1 d’appareils de soins de beauté au monde</h2>
+      <div class="CTA">
+        <div class="titre text-center"><h1>Découvrez les produits révolutionnaires de Nu Skin</h1></div>
+        <div class="row text-center">Des appareils, des compléments alimentaire et des produit de soin de la peau de qualité
+         <button class="btn">Acheter</button> 
+         <button class="btn" id="">En savoir plus</button> 
+        </div>
+      </div>
+    </div>
+      <div class="container mt-4">
+      <!-- Section Appareils -->
+
+      <h1 class="titre text-center">Mes appareils préférés</h1>
+
       <div class="row">
         <div class="col-md-6 mb-4">
           <div class="card">
@@ -46,25 +58,27 @@
               alt="nu-skin-ageloc-boost-beauty-device-callout">
             <div class="card-body">
               <h5 class="card-title">nu-skin-ageloc-boost-beauty</h5>
-              <p class="card-text">Découvrez Nu Skin ageLOC Boost Beauty, l'ultime secret pour une peau éclatante. Grâce
-                à sa technologie avancée, obtenez une peau visiblement plus ferme et revitalisée. Transformez votre
-                routine de soins en une expérience luxueuse et efficace. Offrez à votre peau le coup de boost dont elle
-                a besoin pour rayonner de beauté. Faites l'expérience de la jeunesse retrouvée avec Nu Skin ageLOC Boost
-                Beauty.</p>
+              <div class="card-text">"L'illuminateur de teint"</div>
+                <span> 2 min par jour  illumine visiblement la peau, lui apporte rebond et éclat, tout en favorisant une exfoliation douce et un renouvellement cellulaire plus rapide.
+</span>
 
             </div>
             <div class="text-center">
 
             </div>
             <div class="text-center">
-              <button id="openModalBtn" class="bouton-contact">Découvrir les réductions</button>
+              <button class="bouton-contact" data-toggle="modal" data-target="#modal1">Découvrir les réductions</button>
+              <button class="bouton-contact" data-toggle="modal" data-target="#modal2">En savoir plus</button>
+
             </div>
-            <div id="myModal" class="modal">
-              <div class="modal-content flex row">
+            <div id="modal1" class="modal">
+              <div class="modal-content ">
                 <span class="close">&times;</span>
-                <div class="card-text">Je vous propose une réduction permanent de 30% en créant un compte membre
-                  privilégié. Pour en savoir
-                  plus cliquez <a href="universNuSkin.html">ici</a></div>
+                <div class="card-text">Découvrez Nu Skin ageLOC Boost Beauty, l'ultime secret pour une peau éclatante. Grâce
+                  à sa technologie avancée, obtenez une peau visiblement plus ferme et revitalisée. Transformez votre
+                  routine de soins en une expérience luxueuse et efficace. Offrez à votre peau le coup de boost dont elle
+                  a besoin pour rayonner de beauté. Faites l'expérience de la jeunesse retrouvée avec Nu Skin ageLOC Boost
+                  Beauty </div>
                 <div class="card-body">Je vous propose une réduction Ponctuel de 25% en créant un compte membre
                   privilégié.Pour en savoir
                   plus cliquez <a href="universNuSkin.html">ici</a></div>
@@ -72,6 +86,17 @@
               </div>
             </div>
 
+            <div id="modal2" class="modal">
+              <div class="modal-content ">
+                <span class="close">&times;</span>
+                 <div class="card-body">Je vous propose une réduction Ponctuel de 25% en créant un compte membre
+                  privilégié.Pour en savoir plus cliquez <a href="universNuSkin.html">ici</a>
+                 </div>
+
+              </div>
+            </div>
+
+            
           </div>
         </div>
         <div class="col-md-6 mb-4">
@@ -91,6 +116,7 @@
             </div>
             <div class="text-center">
               <button id="openModalBtn" class="bouton-contact">Découvrir les réductions</button>
+              <button id="openModalBtn" class="bouton-contact">En savoir plus</button>
             </div>
             <div id="myModal" class="modal">
               <div class="modal-content flex row">
@@ -123,6 +149,7 @@
             </div>
             <div class="text-center">
               <button id="openModalBtn" class="bouton-contact">Découvrir les réductions</button>
+              <button id="openModalBtn" class="bouton-contact">En savoir plus</button>
             </div>
             <div id="myModal" class="modal">
               <div class="modal-content flex row">
@@ -145,27 +172,28 @@
               alt="nu-skin-ageloc-wellspa-beauty-device">
             <div class="card-body">
               <h5 class="card-title">nu-skin-ageloc-boost-beauty-device</h5>
-              <p class="card-text">Découvrez Nu Skin ageLOC Boost Beauty Device, votre allié pour une peau éclatante.
-                Grâce à sa technologie avancée, obtenez des résultats visibles en un clin d'œil. Transformez votre
-                routine beauté en une expérience de luxe à domicile. Donnez à votre peau le coup de boost dont elle a
-                besoin pour rayonner de jeunesse et de vitalité. Révélez votre beauté naturelle avec Nu Skin ageLOC
-                Boost Beauty Device.</p>
+              "Le coach Beauté"
+
+              2 min matin et soir
+
+               nettoie et traite la peau pour une peau assainie et éclatante
+              <p class="card-text"></p>
             </div>
             <div class="text-center">
 
             </div>
             <div class="text-center">
               <button id="openModalBtn" class="bouton-contact">Découvrir les réductions</button>
+              <button id="openModalBtn" class="bouton-contact">En savoir plus</button>
             </div>
-            <div id="myModal" class="modal">
+            <div id="myModal8" class="modal">
               <div class="modal-content flex row">
                 <span class="close">&times;</span>
-                <div class="card-text">Je vous propose une réduction permanent de 30% en créant un compte membre
-                  privilégié. Pour en savoir
-                  plus cliquez <a href="universNuSkin.html">ici</a></div>
-                <div class="card-body">Je vous propose une réduction Ponctuel de 25% en créant un compte membre
-                  privilégié.Pour en savoir
-                  plus cliquez <a href="universNuSkin.html">ici</a></div>
+                <div class="card-text">Découvrez Nu Skin ageLOC Boost Beauty Device, votre allié pour une peau éclatante.
+                  Grâce à sa technologie avancée, obtenez des résultats visibles en un clin d'œil. Transformez votre
+                  routine beauté en une expérience de luxe à domicile. Donnez à votre peau le coup de boost dont elle a
+                  besoin pour rayonner de jeunesse et de vitalité. Révélez votre beauté naturelle avec Nu Skin ageLOC
+                  Boost Beauty Device </div>
 
               </div>
             </div>
@@ -173,7 +201,8 @@
         </div>
       </div>
     </div>
-
+  </div>
+  <div class="container mt-4">
     <!-- Section Compléments Alimentaires -->
     <div id="complements" class="mb-6 row">
       <h1 class="text-center">Compléments Alimentaires</h1>
@@ -207,7 +236,8 @@
       </div>
     </div>
 
-
+ </div>
+  <div class="container mt-4">
     <!-- Section Découvrir mon profils Vinted -->
     <div class="Vinted">
 
@@ -217,7 +247,8 @@
     <span> Rejoins moi dans le programme pour bénéficier de tarif avantagieux sur les appariels et les compléments <a
         href=""> programme nuskin</a> </span>
 
-
+  </div>
+  <div class="container mt-4">
     <!-- Pied de page -->
     <footer class="py-4 bg-light">
       <div class="container">
@@ -231,7 +262,7 @@
         <p class="text-center text-muted">© 2024 Osmose, Inc</p>
       </div>
     </footer>
-
+  </div>
     <!-- Scripts Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

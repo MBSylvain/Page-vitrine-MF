@@ -32,41 +32,82 @@
   </nav>
 
   <body>
-    <main>
 
-      <body>
-        <!-- Section de contact -->
-        <div class="container contact-section">
-          <h2 class="text-center mb-4">Contactez-nous</h2>
-          <div class="contact-form bg-light p-4 border rounded">
-            <form action="send_email.php" method="POST">
-              <div class="form-group">
-                <label for="name">Nom</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Adresse Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                <label for="subject">Sujet</label>
-                <input type="text" class="form-control" id="subject" name="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
-            </form>
+
+    <!-- Section de contact -->
+    <div class="container mt-4 contact-section">
+      <h2 class="text-center mb-4">Contactez-moi</h2>
+      <div class="contact-form bg-light p-4 border rounded">
+        <form action="" method="POST" id="contact-form">
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" class="form-control" id="name" name="name" required>
           </div>
-        </div>
+          <div class="form-group">
+            <label for="email">Adresse Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Sujet</label>
+            <select class="form-control" id="technologies" name="technologies" required>
+              <option value="adr">Compte ADR</option>
+              <option value="commander">Commander</option>
+              <option value="distributrice">Je veux devenir Distriubtrice/teur</option>
+              <option value="informations">Je veux des informations</option>
+            </select>
 
-        <!-- Scripts Bootstrap -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      </body>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" value="Send">Envoyer</button>
+        </form>
+      </div>
+    </div>
+    <footer class=" mt-4 py-4 bg-light">
+      <div class="container">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Accueil</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Appareils</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Compléments alimentaires</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Produits de beauté</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Devenir conseiller/consseillère</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2024 Osmose, Inc</p>
+      </div>
 
+    </footer>
+    <!-- Scripts Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- script jsmail-->
 
-    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      // Initialize EmailJS
+      emailjs.init('NuRdoLxBLMXOAu-1P'); // Replace with your actual API key
+
+      // Function to send email
+      function sendEmail(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        emailjs.sendForm('service_x0bgczf', 'template_43m1kz8', event.target)
+          .then((result) => {
+            console.log('SUCCESS!', result.status, result.text);
+            // Optional: Display a success message to the user
+            alert('Votre message a été envoyé avec succès!');
+          }, (error) => {
+            console.log('FAILED...', error);
+            // Optional: Display an error message to the user
+            alert('Une erreur s\'est produite lors de l\'envoi de votre message. Veuillez réess');
+          });
+      }
+
+      // Attach the sendEmail function to the form's submit event
+      document.getElementById('contact-form').addEventListener('submit', sendEmail);
+    </script>
   </body>
+
+</html>
