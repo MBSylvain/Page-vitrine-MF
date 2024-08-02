@@ -1,5 +1,37 @@
 <!-- header-->
-<?php include ('includes/header.php');?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nu Skin - Beauté et Bien-être</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleUniversNuskin.css">
+
+</head>
+<body>
+    <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Nu Skin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="modal.php" class="nav-link px-2 text-muted">Accueil</a></li>
+            <li class="nav-item"><a href="modal.php#appareils" class="nav-link px-2 text-muted">Appareils</a></li>
+            <li class="nav-item"><a href="modal.php#complements" class="nav-link px-2 text-muted">Compléments alimentaires</a></li>
+            <li class="nav-item"><a href="modal.php#promo" class="nav-link px-2 text-muted">Réductions</a></li>
+            <li class="nav-item"><a href="modal.php#about" class="nav-link px-2 text-muted">A propos de moi</a></li>
+            <li class="nav-item"><a href="universNuSkin.html" class="nav-link px-2 text-muted">Devenir conseillère</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+    </header>
+
 
   <!-- Section bannière -->
   <section class="container mt-4" id="accueil" class="accueil">
@@ -217,10 +249,10 @@
         <h1><i>La régularité est la clé du succées</i></h1>
     <p>Un achat unique c'est bien ! mais pour garantir des résultats spectaculaire , la regularité c'est mieux alors optez pour l'ADR et bénéficier de 15% de réduction</p>
         <p>Le programme d'abonnement ADR est un système de commande récurrente mensuelle ou bimestrielle, permettant de gagner des points produits échangeables contre d'autres produits.</p>
-        <a class="btn btn-primary" href="https://nskn.co/XPIdWT"><h3><i>Profiter du programme ADR</i></h3></a>
+        <a class="liens2" href="https://nskn.co/XPIdWT"><h3><i>Profiter du programme ADR</i></h3></a>
     </div>
     </div>
-    <div class="promo-etape">
+    <div class="promo-etape" id="promo">
         <h1 class="text-center mb-4">Comment profiter de 25% à 30% de réductions ?</h1>
         <h4 class="text-center mb-4">C'est simple je vous propose de suivre l'une de ces deux étapes :</h4>
     </div>
@@ -229,13 +261,13 @@
            
                 <div class="card col-md-4">
                     <h3 class="card-title text-center">Réduction permanente de 30%</h3>
-                    <span class="text-center">En créant un commpte menbre  <a href="https://nskn.co/XPIdWT">priviliégié</a></span>
+                    <span class="text-center">En créant un commpte menbre  <a class="liens2" href="https://nskn.co/XPIdWT">priviliégié</a></span>
                     <div class="card-img-top">
                         <img src="QR code mf.png" alt="logo nu skin">
                     </div>  
                     <span class="text-center">Cliquez ou scanner ce liens, puis laissez vous guider</span>
                     <span class="text-center">Besoin d'être accompagné ?</span>
-                    <span>contacter moi nous le ferons ensemble</span>
+                    <span><a class="liens2" href="Contact.html">Contactez moi</a> nous le ferons ensemble</span>
                 </div>
   
                 <div class="card col-md-4">
@@ -243,9 +275,9 @@
                     <span class="text-center">Sans créer de compte membre </span>
                     
                     <span class="text-center">Selectionnez les produits cliquez sur envoyer</span>
-                    <span class="text-center">J'accède au Formulaire de selection</span>
+                    <span class="text-center">J'accède au <a class="liens2" href="Commandes.html">Formulaire de selection</a></span>
                     <span class="text-center">Besoin d'information supplémentaire ?</span>
-                    <span>contacter moi nous ferons le point ensemble <a href="Contact.html">Contactez moi</a> </span>
+                    <span><a class="liens2" href="Contact.html">Contactez moi</a> nous ferons le point ensemble. </span>
                 </div>
 
     
@@ -273,27 +305,7 @@
             </div>
         </div>
 
-        <div class="modal fade" id="modal-beauty-focus-collagen-sub" tabindex="-1" role="dialog" aria-labelledby="modal-beauty-focus-collagen-sub-label" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal-beauty-focus-collagen-sub-label">Abonnement ADR 15% de réduction - BEAUTY FOCUS Collagen+</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Contenu du modal pour l'abonnement de BEAUTY FOCUS Collagen+ -->
-                        <p>Informations sur l'abonnement ADR 15% de réduction de BEAUTY FOCUS Collagen+</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                        <button type="button" class="btn btn-primary">Confirmer l'abonnement</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        
         <div class="modal fade" id="modal-treme" tabindex="-1" role="dialog" aria-labelledby="modal-treme-label" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -316,26 +328,7 @@
             </div>
         </div>
 
-        <div class="modal fade" id="modal-treme-sub" tabindex="-1" role="dialog" aria-labelledby="modal-treme-sub-label" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal-treme-sub-label">Abonnement ADR 15% de réduction - TREME</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Contenu du modal pour l'abonnement de TREME -->
-                        <p>Informations sur l'abonnement ADR 15% de réduction de TREME</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                        <button type="button" class="btn btn-primary">Confirmer l'abonnement</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
         <div class="modal fade" id="modal-beauty-focus-mineraly" tabindex="-1" role="dialog" aria-labelledby="modal-beauty-focus-mineraly-label" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -358,40 +351,22 @@
             </div>
         </div>
 
-        <div class="modal fade" id="modal-beauty-focus-mineraly-sub" tabindex="-1" role="dialog" aria-labelledby="modal-beauty-focus-mineraly-sub-label" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal-beauty-focus-mineraly-sub-label">Abonnement ADR 15% de réduction - BEAUTY FOCUS Mineraly</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Contenu du modal pour l'abonnement de BEAUTY FOCUS Mineraly -->
-                        <p>Informations sur l'abonnement ADR 15% de réduction de BEAUTY FOCUS Mineraly</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                        <button type="button" class="btn btn-primary">Confirmer l'abonnement</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
  
 
-  <div class="about-box container mt-4 justify-content-center">
+  <div class="about-box container mt-4 justify-content-center" id="about">
     <div class="container mt-4 text-center"><h1>Qui suis je ?</h1></div>
-    <div class="about row  text-center">
-        <div class="col-8 justify-content-justify"><p class="text">En 2017, j'ai commencé à utiliser le Galvanic Spa visage et divers produits NU SKIN. Cependant, je n'étais pas assidue dans ma routine. En juin 2021, j'ai décidé de prendre soin de ma peau plus sérieusement pour lutter contre le vieillissement. J'ai intégré le Lumispa et l'Ageloc Boost à ma routine quotidienne, ce qui a transformé ma peau en six mois. Les gens ont remarqué mon teint éclatant, grâce à NU SKIN.
+    <div class="about container mt-4 row text-center">
+        <div class="col-8 justify-content-justify"><p class="text text-justify">En 2017, j'ai commencé à utiliser le Galvanic Spa visage et divers produits NU SKIN. Cependant, je n'étais pas assidue dans ma routine. En juin 2021, j'ai décidé de prendre soin de ma peau plus sérieusement pour lutter contre le vieillissement. J'ai intégré le Lumispa et l'Ageloc Boost à ma routine quotidienne, ce qui a transformé ma peau en six mois. Les gens ont remarqué mon teint éclatant, grâce à NU SKIN.
 
             En 2022, j'ai testé le collagène Beauty Focus+ par curiosité. Contrairement à mon ancien collagène, celui-ci a montré des résultats visibles, rajeunissant mon visage de dix ans. Convaincue par l'efficacité des produits NU SKIN, je suis devenue distributrice.</p>
 </div>
-        <div class="col-2 justify-content-center text-right"><img class="card-img-top" src="nu-skin-ageloc-best-selling-beauty-devices-banner.webp" alt="photo de moi"></div>
+        <div class="col-3 justify-content-center text-right"><img class="card-img-top" src="nu-skin-ageloc-best-selling-beauty-devices-banner.webp" alt="photo de moi"></div>
     </div>
+      <div class="container text-center"> <h1>Rejoins moi dans l'avenuture <a class="liens2"
+      href="https://nskn.co/XPIdWT"><h1>Nuskin</h1> </a></h1> </div>
   </div>  
-    <div class="container text-center"> <h1>Rejoins moi dans l'avenuture <a
-    href="https://nskn.co/XPIdWT"><i>Nuskin</i> </a></h1> </div>
+   
  <!--   
 <div class="Vinted">
 
@@ -402,7 +377,20 @@
     </div>
    
 -->
- <?php include_once ('includes/footer.php');?>
+    <footer class="py-4 bg-light">
+      <div class="container">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="modal.php" class="nav-link px-2 text-muted">Accueil</a></li>
+          <li class="nav-item"><a href="modal.php#appareils" class="nav-link px-2 text-muted">Appareils</a></li>
+          <li class="nav-item"><a href="modal.php#complements" class="nav-link px-2 text-muted">Compléments alimentaires</a></li>
+          <li class="nav-item"><a href="modal.php#promo" class="nav-link px-2 text-muted">Réductions</a></li>
+          <li class="nav-item"><a href="modal.php#about" class="nav-link px-2 text-muted">A propos de moi</a></li>
+          <li class="nav-item"><a href="universNuSkin.html" class="nav-link px-2 text-muted">Devenir conseillère</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2024 Osmose, Inc. Tous droits réservés.</p>
+      </div>
+    </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
