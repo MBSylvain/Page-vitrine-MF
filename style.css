@@ -95,30 +95,10 @@ imgTitre {
   background-color: #53c6c2;
 }
 
-@media screen and (max-width:600px) {
-
-  .baniere {
-    width: 80%;
-    height: 80%;
-    text-align: center;
-  }
-
-  .appareil {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .complement {
-    animation: fadein 3s;
-    width: 200px;
-    height: 200px;
-  }
-
-  .devenir {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
+.label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /* fenetre modal  
@@ -155,4 +135,3 @@ imgTitre {
   height: 100%;
   text-align: center;
 }
-

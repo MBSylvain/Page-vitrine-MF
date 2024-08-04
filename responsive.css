@@ -1,0 +1,96 @@
+/* Media Queries for Different Screen Sizes */
+
+/* Small Screen Styles (Mobile Devices) */
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 95%;
+    /* Make container take up most of the width */
+  }
+
+  .checkbox-group label {
+    width: 100%;
+    /* Make checkboxes full width */
+  }
+
+  .checkbox-group .card {
+    height: 100px;
+    /* Adjust as needed */
+  }
+
+  #commande-form {
+    padding: 10px;
+    /* Adjust padding */
+  }
+
+  button[type="submit"],
+  button[type="reset"] {
+    width: 100%;
+    /* Make buttons full width */
+    margin-bottom: 10px;
+  }
+
+  .card-deck {
+    flex-direction: column;
+    /* Arrange cards vertically */
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .complements {
+    flex-direction: column;
+    /* Arrange complements vertically */
+    height: fit-content;
+  }
+
+  .complements-items {
+    width: 90%;
+    text-align: center;
+  }
+
+  .promo {
+    flex-direction: column;
+    /* Arrange promo items vertically */
+  }
+
+  .about {
+    flex-direction: column;
+    /* Arrange about items vertically */
+  }
+
+}
+
+/* Medium Screen Styles (Tablets) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .checkbox-group label {
+    width: 48%;
+    /* Adjust for desired column width */
+  }
+
+  .checkbox-group .card {
+    height: 120px;
+    /* Adjust as needed */
+  }
+}
+
+/* Large Screen Styles (Desktops) */
+@media screen and (min-width: 901px) {
+  .container {
+    max-width: 70%;
+  }
+
+  .checkbox-group label {
+    width: 48%;
+    /* Adjust for desired column width */
+  }
+
+  .checkbox-group .card {
+    height: 150px;
+    /* Adjust as needed */
+  }
+}

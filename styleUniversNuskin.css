@@ -4,9 +4,11 @@
   padding: 40px 0;
   /* Add padding to create space between sections */
 }
-.card-img-top:hover{
+
+.card-img-top:hover {
   scale: ;
 }
+
 .titre {
   text-align: center;
   margin-bottom: 20px;
@@ -25,12 +27,14 @@
   border-width: 1px 0;
   box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
+
 /*style des lien2*/
-.liens2{
- color:#fa29ac ;
+.liens2 {
+  color: #fa29ac;
 }
-.liens2:hover{
- color:#0ab9c2 ;
+
+.liens2:hover {
+  color: #0ab9c2;
 }
 
 /* Styling for Links */
@@ -65,7 +69,7 @@ a:hover {
 }
 
 #benefits ul {
-  list-style: disc;
+  list-style: none;
   /* Use bullet points for the list */
   text-align: center;
   margin-left: 40px;
@@ -74,17 +78,59 @@ a:hover {
 
 
 
-/* Responsive Design (adjust layout for smaller screens) */
-@media (max-width: 768px) {
-  section h2 {
-    font-size: 20px;
+/* Small Screen Styles (Mobile Devices) */
+@media screen and (max-width: 600px) {
+  nav ul li {
+
+
+    /* Arrange navigation items vertically */
+    margin: 10px 0;
   }
 
-  section p {
-    font-size: 16px;
+  .container {
+    max-width: 95%;
+    /* Make container take up most of the width */
   }
 
-  #benefits ul {
-    margin-left: 20px;
+  .titre {
+    font-size: 1.6rem;
+    /* Adjust heading size */
+  }
+
+  .opportunite {
+    padding: 10px;
+    /* Adjust padding */
+  }
+
+  .liens2 {
+    font-size: 0.9rem;
+    /* Adjust link font size */
+  }
+
+  ul li {
+    list-style: none;
+  }
+}
+
+/* Medium Screen Styles (Tablets) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  nav ul li {
+    display: inline-block;
+    /* Arrange navigation items horizontally */
+    margin: 0 5px;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .titre {
+    font-size: 1.8rem;
+    /* Adjust heading size */
+  }
+
+  .opportunite {
+    padding: 15px;
+    /* Adjust padding */
   }
 }
