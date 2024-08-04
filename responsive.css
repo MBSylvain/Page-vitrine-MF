@@ -4,6 +4,7 @@
 @media screen and (max-width: 600px) {
   .container {
     max-width: 95%;
+    height: fit-content;
     /* Make container take up most of the width */
   }
 
@@ -35,29 +36,53 @@
   }
 
   .card {
-    width: 90%;
+    width: 100%;
   }
-
-  .complements {
+  .appareils {
+    /* Arrange complements vertically */
+    height: fit-content;
+  }
+  .complements,
+  .promo   {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     /* Arrange complements vertically */
     height: fit-content;
   }
 
   .complements-items {
-    width: 90%;
-    text-align: center;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    width:100%;
   }
 
-  .promo {
+  
+  
+  .ADR {
     flex-direction: column;
+    width: 90%;
+    margin: 10px 10px;
+    text-align: justify;
     /* Arrange promo items vertically */
   }
-
-  .about {
-    flex-direction: column;
-    /* Arrange about items vertically */
+  .container {
+    max-width: 100%;
   }
+  .about{
+    height: fit-content;
+    /* Arrange promo items vertically */
+  }
+  .about-items{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
 
 }
 
@@ -75,6 +100,33 @@
   .checkbox-group .card {
     height: 120px;
     /* Adjust as needed */
+  }
+  .complements{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    /* Arrange complements vertically */
+  }
+  .complements-items {
+    /* Arrange complements vertically */
+    height: fit-content;
+    max-width: fit-content;
+  }
+  .ADR {
+    flex-direction: row;
+    width: 90%;
+    margin: 10px 10px;
+    text-align: center;
+    height: fit-content;
+    /* Arrange promo items vertically */
+  }
+  .promo, 
+  .about-box{
+    
+    height: fit-content;
+    /* Arrange promo items vertically */
   }
 }
 
